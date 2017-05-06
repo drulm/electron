@@ -178,3 +178,7 @@ This switch only works when `--enable-logging` is also passed.
 [play-silent-audio]: https://github.com/atom/atom/pull/9485/files
 [debugging-main-process]: ../tutorial/debugging-main-process.md
 [node-cli]: https://nodejs.org/api/cli.html
+
+## --port-range=`start-end`
+
+Restricts the Udp port range to ports from start to end inclusive.

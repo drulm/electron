@@ -176,6 +176,13 @@ void WebContentsPreferences::AppendExtraCommandLineSwitches(
                                 &disable_blink_features))
     command_line->AppendSwitchASCII(::switches::kDisableBlinkFeatures,
                                     disable_blink_features);
+  
+  // Enable udp_port_range.
+  std::string udp_port_range;
+  if (web_preferences.GetString(options::kWebRtcUdpPortRange,
+                                &udp_port_range))
+    command_line->AppendSwitchASCII(switches::kWebRtcUdpPortRange,
+                                    udp_port_range);
 
   // The initial visibility state.
   NativeWindow* window = NativeWindow::FromWebContents(web_contents);

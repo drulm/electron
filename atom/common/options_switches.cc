@@ -128,6 +128,9 @@ const char kDisableBlinkFeatures[] = "disableBlinkFeatures";
 // Enable the node integration in WebWorker.
 const char kNodeIntegrationInWorker[] = "nodeIntegrationInWorker";
 
+// Enable Udp port range option.
+const char kWebRtcUdpPortRange[] = "webRtcUdpPortRange";
+
 }  // namespace options
 
 namespace switches {
@@ -163,15 +166,16 @@ const char kAppUserModelId[] = "app-user-model-id";
 const char kAppPath[] = "app-path";
 
 // The command line switch versions of the options.
-const char kBackgroundColor[]  = "background-color";
-const char kPreloadScript[]    = "preload";
-const char kPreloadURL[]       = "preload-url";
-const char kNodeIntegration[]  = "node-integration";
-const char kContextIsolation[] = "context-isolation";
-const char kGuestInstanceID[]  = "guest-instance-id";
-const char kOpenerID[]         = "opener-id";
-const char kScrollBounce[]     = "scroll-bounce";
-const char kHiddenPage[]       = "hidden-page";
+const char kBackgroundColor[]       = "background-color";
+const char kPreloadScript[]         = "preload";
+const char kPreloadURL[]            = "preload-url";
+const char kNodeIntegration[]       = "node-integration";
+const char kContextIsolation[]      = "context-isolation";
+const char kGuestInstanceID[]       = "guest-instance-id";
+const char kOpenerID[]              = "opener-id";
+const char kScrollBounce[]          = "scroll-bounce";
+const char kHiddenPage[]            = "hidden-page";
+const char kWebRtcUdpPortRange[]    = "port-range";
 
 // Command switch passed to renderer process to control nodeIntegration.
 const char kNodeIntegrationInWorker[]  = "node-integration-in-worker";

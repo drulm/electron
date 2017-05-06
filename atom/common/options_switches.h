@@ -49,6 +49,7 @@ extern const char kHasShadow[];
 extern const char kFocusable[];
 extern const char kWebPreferences[];
 extern const char kVibrancyType[];
+extern const char kWebRtcUdpPortRange[];
 
 // WebPreferences.
 extern const char kZoomFactor[];
@@ -96,6 +97,8 @@ extern const char kNodeIntegrationInWorker[];
 
 extern const char kWidevineCdmPath[];
 extern const char kWidevineCdmVersion[];
+
+extern const char kWebRtcUdpPortRange[];
 
 }  // namespace switches
 
